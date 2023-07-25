@@ -1,0 +1,40 @@
+.rodape{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+.left{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "imagem texto1"
+    "imagem texto2";
+    column-gap: 1rem;
+}
+.rodape__imagem{
+    grid-area: imagem;
+    
+}
+
+.center{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "botoes"
+    "barra";
+}
+.botoes{
+    justify-self: center;
+    align-self: center;
+    grid-area: botoes;
+    grid-area: 1/1/1/4;
+}
+.barra{
+    justify-self: center;
+    align-self: center;
+    grid-area: barra;
+    grid-area: 2/1/2/4;
+
+}
